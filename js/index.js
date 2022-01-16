@@ -15,7 +15,7 @@ function save() {
     let number = document.getElementById("mobile").value;
     let state = document.getElementById("state").value;
     let pincode = document.getElementById("pincode").value;
-    console.log(email);
+  //  console.log(name,address);
     if (name == '') {
         document.getElementById("errormessage").innerHTML = "Name Can Not Be Blank.";
         document.getElementById("name").style.backgroundColor = "#ff8080";

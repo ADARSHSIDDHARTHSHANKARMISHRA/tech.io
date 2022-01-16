@@ -10,12 +10,12 @@ if(isset($_GET["name"])){
     $pincode=$_GET["pin"];
     $page=$_GET["page"];
 
-    $sql="INSERT INTO `contact` VALUES('$name','$email','$address','$number','$state','$pincode');";
+    $sql="INSERT INTO `userdata` VALUES('$name','$email','$address','$number','$state','$pincode');";
   //  $conn->query($sql);
   $result = mysqli_query($conn, $sql);
   
-  //  header('Location: ' . $page);
-   // die();
+   header('Location: ' . $page);
+   die();
 }
 
 ?>
